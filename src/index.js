@@ -38,7 +38,8 @@ function displayTemperature(response) {
 }
 
 let apiKey = "b3a4489ba69b29805e86d4aac8b269f2";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Johannesburg&units=metric&appid=${apiKey}`;
+let city = "Johannesburg"
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
 
 console.log(apiUrl);
 axios.get(apiUrl).then(displayTemperature);
