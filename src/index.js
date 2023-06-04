@@ -111,39 +111,7 @@ function handleSubmit(event) {
   console.log(cityInputElement.value);
 }
 
-function updateTemperature(value, unit) {
-  document.getElementById("temperature").textContent = value;
-  document.getElementById("celsius-link").classList.remove("active");
-  document.getElementById("fahrenheit-link").classList.remove("active");
-
-  if (unit === "C") {
-    document.getElementById("celsius-link").classList.add("active");
-  } else if (unit === "F") {
-    document.getElementById("fahrenheit-link").classList.add("active");
-  }
-}
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", function (event) {
-  event.preventDefault();
-  let temperatureCelsius = parseFloat(
-    document.getElementById("temperature").textContent
-  );
-  let temperatureFahrenheit = (temperatureCelsius * 9) / 5 + 32;
-  updateTemperature(Math.round(temperatureFahrenheit, "F"));
-});
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", function (event) {
-  event.preventDefault();
-  let temperatureFahrenheit = parseFloat(
-    document.getElementById("temperature").textContent
-  );
-  let temperatureCelsius = ((temperatureFahrenheit - 32) * 5) / 9;
-  updateTemperature(Math.round(temperatureCelsius, "C"));
-});
 
 search("Johannesburg");
