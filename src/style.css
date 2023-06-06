@@ -1,41 +1,38 @@
-
 body {
   font-family: Inter;
-  background-image: ;
-        background-repeat: no-repeat;
-        background-size: cover;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/084/660/original/Pink_Abstract_Tech_Gaming_Neon_Background.png?1686061855);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000221;
 }
 a {
   text-decoration: none;
+  color: #FF00B8;
 }
 h1 {
-  color: grey;
+  color: white;
   display: block;
   font-size: 30px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
 }
-.form-control{
-  background-color: #f5f5f5;
-  opacity: 0.2;
+.form-control {
+  background-color: white;
+
 }
-.search-button {
-  opacity: 0.2;
-  width: 100px;
-  padding: 5px;
-  border-radius: 5px;
-}
+
 .units {
-  color: grey;
+  color: white;
 }
 ul {
   margin: 0;
+  margin-top: 10px;
   padding: 0;
 }
 li {
   list-style: none;
-  color: grey;
+  color: white;
   display: block;
   margin: 0;
   padding: 0;
@@ -48,6 +45,7 @@ li:first-letter {
 }
 small {
   font-size: 12px;
+  color: white;
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -58,6 +56,13 @@ small {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  margin-top: 10rem;
+    box-shadow: 0 0 .1rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #180C9D,
+            0 0 0.8rem #180C9D,
+            0 0 2.8rem #180C9D,
+            inset 0 0 1.2rem #180C9D; 
 }
 .overview {
   margin-bottom: 20px;
@@ -68,7 +73,7 @@ small {
   width: 64px;
 }
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: white;
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -81,7 +86,7 @@ small {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  
+  color: white;
 }
 .weather-forecast-date {
   font-size: 15px;
